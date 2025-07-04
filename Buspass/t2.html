@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+</head>
+<body>
+    <form action="submit.html">
+        <label for="Email">Email</label>
+        <input type="text" id="Email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"><br>
+        <label for="Password">Password</label>
+        <input type="text" id="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,16}" ><br>
+        <input type="submit" value="Login" >
+    </form>
+</body>
+</html>
+<!-- (?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_].{8,16}) -->

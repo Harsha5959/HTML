@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+.nav{
+    text-align: center;
+    position: fixed; 
+    padding: 10px;
+    top: 0px;
+    z-index: auto;
+    text-align: center;
+    background-color: white;
+}
+.a {
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  margin-left: 100px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.b{
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+}
+.row1,.row2{
+    padding: auto;
+    margin-top: 50px;
+}
+.data{
+    text-align: center;
+    width: auto;
+}
