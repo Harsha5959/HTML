@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navbar with Dropdown</title>
+  <style>
+    .nav {
+      display: flex;
+      gap: 30px;
+      padding: 10px 20px;
+      background-color: #f2f2f2;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-item > h4 {
+      margin: 0;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-item:hover > h4 {
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+    }
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: none;
+      flex-direction: column;
+      border-radius: 5px;
+      z-index: 999;
+    }
+
+    .dropdown a {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.3s;
+    }
+
+    .dropdown a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .nav-item:hover .dropdown {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <div class="nav-item">
+      <h4>Home</h4>
+      <div class="dropdown">
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <h4>About</h4>
+      <div class="dropdown">
+        <a href="#">Our Team</a>
+        <a href="#">Vision</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <h4>Contact</h4>
+      <div class="dropdown">
+        <a href="#">Email</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
